@@ -1,0 +1,35 @@
+h1 {
+    color:red;
+    text-align: center;
+    font-weight: normal;
+}
+
+h3 {
+    color: blue;
+    font-size: 1.5em;
+}
+
+.articleUn ,.articleDeux {
+    background-color: gray;
+}
+
+strong {
+    font-weight: normal;
+    color: yellowgreen;
+}
+
+em {
+    font-style: normal;
+    text-decoration: underline;
+    font-size: 2em;
+    color: orange;
+}
+
+p {
+    background-color: pink;
+}
+h3 {
+    color: green;
+    text-align: right;
+    text-decoration: underline;
+}
