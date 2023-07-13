@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bandeau">
+        <video src="Batman Opening.mp4" autoplay loop muted></video>
+    </div>
+
+    <nav class="menu">
+        <ul>
+            <li> <a href="">WAYNE'S MANOR TOUR</a></li>
+            <li> <a href="">BRUCE WAYNE / BATMAN</a></li>
+            <li> <a href="">FAQ</a></li>
+        </ul>
+    </nav>
+
+   <div class="anim"><img src="Batarang.png" alt="Batarang" class="batarang"></div>
+    
+    <div class="wrapper">
+        <header class="identite">
+            <div>
+                <img src="Batman_Portrait_01.jpg" alt="Portrait de Batman">
+            </div>
+            <div>
+                <h1>Bruce Wayne / Batman</h1>
+                <h2>Milliardaire Justicier</h2>
+            
+                <ul class="coordonnees">
+                    <li>Manoir Wayne, Gotham City</li>
+                    <li><a href="mailto:bwayne@wayne.com">bwayne@wayne.com</a></li>
+                    <li>555-XXX-XXXX</li>
+                    <li>Bat-Signal utilisable auprès du commisaire Gordon</li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="fiche">
+            <aside class="devis">
+                <form action="post">
+                    <h3>Demande d'Intervention</h3>
+                    <input type="text" name="nom" id="nom" placeholder="VOTRE NOM" minlength="1" pattern="[A-Za-z-]" title="Uniquement des lettres minsucules, majuscule et les tirets -">
+                    <input type="text" name="prenom" id="prenom" placeholder="VOTRE PRENOM" minlength="1" pattern="[A-Za-z-]" title="Uniquement des lettres minsucules, majuscule et les tirets -">
+                    <input type="text" name="adresse" id="adresse" placeholder="VOTRE ADRESSE" minlength="1" pattern="[A-Za-z0-9.,-]" title="Uniquement des lettres minsucules, majuscule, les chiffres et les caractères .,-">
+                    <input type="tel" name="telephone" id="telephone" placeholder="VOTRE TELEPHONE" minlength="8" pattern="[0-9.-]{8-14}" title="8 à 10 chiffres pouvant être séparés par un . ou un -">
+                    <input type="email" name="mail" id="mail" placeholder="VOTRE MAIL" minlength="7" pattern="[a-z0-9.-]+@[a-z0-9.-]+.[a-z]{2,6}" title="doit être au format xxxxx@xxx.xx">
+
+                    <fieldset>
+                        <legend>Votre Besoin</legend>
+                        <p><input type="radio" name="interview" id="interview" value="interview"> <label for="interview">Une interview pour le Gotham Post</label></p>
+                        <p><input type="radio" name="don" id="don" value="don"> <label for="don">Demande de don</label></p>
+                        <p><input type="radio" name="danger" id="danger" value="danger"> <label for="danger">Vous êtes en danger</label></p>
+                        <p><input type="radio" name="chat" id="chat" value="chat"> <label for="chat">Votre chat est coincé dans un arbre</label></p>
+                        <p><input type="radio" name="joker" id="joker" value="joker"> <label for="joker">Vous êtes le Joker</label></p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Une Complication?</legend>
+                        <p><input type="checkbox" name="harley" id="harley" value="harley"> <label for="harley">Harley Quinn vous harcèle</label></p>
+                        <p><input type="checkbox" name="catwoman" id="catwoman" value="catwoman"> <label for="catwoman">Vous êtes amoureux(se) de Catwoman</label></p>
+                        <p><input type="checkbox" name="ivy" id="ivy" value="ivy"> <label for="ivy">Poison Ivy est votre jardinière</label></p>
+                    </fieldset>
+
+                    <legend>Une précision à apporter</legend>
+                    <textarea name="precision" id="precision" cols="30" rows="10"></textarea>
+
+                    <input type="submit" value="send" name="send" id="send">
+                </form>
+            </aside>
+
+            <div class="fiche_gauche">
+                <section class="competence">
+                    <h3>Compétences</h3>
+                    <ul>
+                        <li>Gestion d'Entreprise</li>
+                        <li>Expert en Art Martiaux</li>
+                        <li>Voltige sportive</li>
+                        <li>Technique d'investigation</li>
+                        <li>Interrogatoire musclé</li>
+                        <li>Art de la Guerre</li>
+                        <li>Ingieniérie de pointe</li>
+                    </ul>
+
+                    <h4>Super Pouvoir</h4>
+                    <ul>
+                        <li>Méga Riche +</li>
+                        <li>Ami//Rival avec Superman +</li>
+                        <li>Fait parti de la Justice League +</li>
+                        <li>A survécu malgré aux films <em>Batman Forever</em> et <em>Batman et Robin</em> +</li>
+                    </ul>
+                </section>
+
+                <section class="experience">
+                    <h3>Expériences</h3>
+                    <div>
+                        <h4>Tuteur de Dick Grayson</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a feugiat ante. Praesent ullamcorper luctus odio a blandit. 
+                            Donec et quam libero. Sed mauris purus, sagittis sed auctor at, ornare ultrices libero. Phasellus porta porta libero. 
+                            Sed eu nibh placerat, semper enim sit amet, interdum sapien. Vivamus porttitor urna urna.</p>
+                    </div>
+
+                    <div>
+                        <h4>PDG de Wayne Enterprise</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a feugiat ante. Praesent ullamcorper luctus odio a blandit. 
+                            Donec et quam libero. Sed mauris purus, sagittis sed auctor at, ornare ultrices libero. Phasellus porta porta libero. 
+                            Sed eu nibh placerat, semper enim sit amet, interdum sapien. Vivamus porttitor urna urna.</p>
+                    </div>
+
+                    <div>
+                        <h4>Justicier de Gotham City</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a feugiat ante. Praesent ullamcorper luctus odio a blandit. 
+                            Donec et quam libero. Sed mauris purus, sagittis sed auctor at, ornare ultrices libero. Phasellus porta porta libero. 
+                            Sed eu nibh placerat, semper enim sit amet, interdum sapien. Vivamus porttitor urna urna.</p>
+                    </div>
+                </section>
+
+                <section class="formation">
+                    <h3>Formation</h3>
+                    <div>
+                        <h4>Ligue des Ombres : Ninjustsu niveau Expert</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a feugiat ante. Praesent ullamcorper luctus odio a blandit. 
+                            Donec et quam libero. Sed mauris purus, sagittis sed auctor at, ornare ultrices libero. Phasellus porta porta libero. 
+                            Sed eu nibh placerat, semper enim sit amet, interdum sapien. Vivamus porttitor urna urna.</p>
+                    </div>
+
+                    <div>
+                        <h4>Académie Wayne : Ingénieur en Sciences Appliquées</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a feugiat ante. Praesent ullamcorper luctus odio a blandit. 
+                            Donec et quam libero. Sed mauris purus, sagittis sed auctor at, ornare ultrices libero. Phasellus porta porta libero. 
+                            Sed eu nibh placerat, semper enim sit amet, interdum sapien. Vivamus porttitor urna urna.</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="fiche_droite">
+                <section class="realisation">
+                    <h3>Réalisation</h3>
+                    <div>
+                        <h4>Batcave</h4>
+                        <img src="gray-rogers-bat2-env-batcave.jpg" alt="Batcave">
+                    </div>
+
+                    <div>
+                        <h4>Batmobile</h4>
+                        <!--<img src="batman-1-batmobile.jpg" alt="Batmobile">-->
+                        <video src="Batman Animated - Batmobile.mp4" controls autoplay width="450px" muted></video>
+                    </div>
+
+                    <div>
+                        <h4>Robin</h4>
+                        <img src="Robin.jpg" alt="Robin">
+                    </div>
+
+                    <div>
+                        <h4>Batman : La Série Animée</h4>
+                    <img src="Batman-The-Animated-Series.jpg" alt="Batman La Série Animée">
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+        <footer class="loisir">
+            
+            <h3>Loisirs</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent iaculis purus a fermentum vestibulum. Donec nec sapien purus. 
+                Proin fermentum, magna eget euismod gravida, diam mauris rhoncus sem, dictum aliquet mauris purus ut augue. 
+                Sed rutrum felis a tortor elementum gravida non ut justo. Sed nec orci ante. Integer in mi rhoncus, vestibulum nunc vitae, pulvinar felis. 
+                Integer placerat lacinia enim vitae dictum. Nam tempor quam scelerisque, lacinia nisi vel, sollicitudin ante. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed scelerisque viverra tincidunt. In eu nisl mattis, 
+                rhoncus ligula pretium, convallis risus. Cras viverra faucibus lacus vitae fermentum. Aenean dapibus aliquet purus eu venenatis.</p>
+
+        </footer>
+    </div>
+</body>
+</html>
