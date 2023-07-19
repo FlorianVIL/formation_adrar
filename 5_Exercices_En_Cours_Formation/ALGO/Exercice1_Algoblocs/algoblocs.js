@@ -622,7 +622,7 @@ for(let i= 0; i< 10; i++) {
     right(180-90);
     longueur += 25;
 }
-
+*/
 
 
 // D-11 : Décrémentation //
@@ -641,9 +641,3 @@ for(let i= 0; i< 5; i++){
     forward(longueur);
     longueur -= 25;
 }
-*/
-
-
-// D-12 : Escargot triangulaire //
-
-// Initialisation
