@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- tuto!!!! pour avoir tous notre code de centrer il suffit de mettre un width: une valeur et ensuite un margin:center !!!-->
+
+    <!-- ATTENTION pour ton bootstrap aller voir sur https://getbootstrap.com/ pour tous ce que l'on veut faire, dans la barre de recherche -->
+    <h1>Hello, world!</h1>
+    <button type="button" class="btn btn-primary">Yess trop cool bootstrap</button>
+    <!--  on a fait un bouton sous le titre avec un fond bleu (primary) -->
+    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+      <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <!-- on a fait un bouton alert (on voit avec la classe "alert") on lui a mit primary pour lui mettre la couleur bleu et le dismissible fade show sert a quand on clic sur la croix le message distarait -->
+    
+    <!-- **************************************************************************************************************************************** -->
+
+    <h1>CONTAINER</h1>
+    <!-- en dessous on a fait des grid pour ranger nos info dans des container -->
+    <div class="container">
+      <div class="border border-info">
+        Hello container
+      </div>   
+    </div>
+    <!-- la class est très important on ne met pas de "container" sur le body,  -->
+    <!-- en dessous les md,lg,xl sont des breakpoints qui rende responsive notre travail selon la taille de l'écran. -->
+    <div class="container-md">
+      <!-- md = small -->
+      <div class="border border-info">
+        container-md
+      </div>   
+    </div>
+
+    <div class="container-lg">
+      <!-- lg = medium -->
+      <div class="border border-info">
+        container-lg
+      </div>   
+    </div>
+
+    <div class="container-xl">
+      <!-- xl = large -->
+      <div class="border border-info">
+        container-xl
+      </div>   
+    </div>
+
+    <div class="container-fuild">
+      <!-- fluid = prend toute la place disponible -->
+      <div class="border border-info">
+        container-fuild
+      </div>
+      <!-- le mot "fluid" signifie quel va prendre toute la place disponible    -->
+    </div>
+
+<!-- ************************************************************************************************************************************************ -->
+
+<br>
+  <h1>CRC-Row</h1>
+  <div class="container">
+    <!-- Pour les grid on prendra comme référence A CHAQUE FOIS des colonne de 12!!!(dans l'exemple 9+3 = 12) -->
+    <div class="row">
+      <!-- row signigi ligne pour refaire une ligne il suffira de refaitre une div class ="row" -->
+      <div class="col-9 bg-warning ">
+        colonne 1
+  <!-- Ici j'ai fait une colonne sur une ligne de 3 fois la deuxieme donc 9 ou je lui est mit un background color jaune(warning)   -->
+      </div>
+      <div class="col-3 bg-info">
+        colonne 2
+  <!-- Et la j'ai fait une colonne de ce qui restait avec un background bleu clair (info)       -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ********************************************************************************************************************************************** -->
+  <br>
+  <h1>Exo-Tableaux row et colonnes</h1>
+  <div class="container">
+    <div class="row">
+      <div class="border border-dark py-3 text-center col-12">
+   <!-- le "border" = mettre un contour, "border-dark" = couleur en noir et le "py-3" = un paddding sur l'axe y de 3.(%,em des valeur général)       -->
+        12
+      </div>
+    </div>
+    <div class="row">
+      <div class="border border-dark py-3 col-6">
+        6
+      </div>
+    </div>
+    <div class="row">
+      <div class="border border-dark py-3 col-3">
+        3
+      </div>
+      <div class="border border-dark py-3 text-center col-3">
+        3
+      </div>
+      <div class="border border-dark  col-6">
+        6
+      </div>
+    </div>
+  </div>
+  <br>
+  <!-- CRC Corréction du prof-->
+  <h1>CRC-Tableaux row et colonnes</h1>
+  <div class="container">
+      <div class="row">
+        <!-- Sur la mm ROW on a illusion de 2 lignes
+            en fait c'est 1 ROW mais comme la 1ere col prend tout l'espace
+            La colonne de 6 va se placer auto en dessous -->
+          <div class="col-12 border py-3 border-primary">12</div>
+          <div class="col-6 border py-3 border-primary">6</div>
+      </div>
+  </div>
+  <div class="container">
+       <div class="row">
+          <div class="col-3 border py-3 border-primary">3</div>
+          <div class="col-3 border py-3 border-primary">3</div>
+          <div class="col-6 border py-3 border-primary">6</div>
+       </div>
+  </div>
+
+  <!-- ********************************************************************************************************************************************** -->
+
+  <br>
+  <h1>CRC-Placement</h1>
+  <div class="container">
+      <div class="row card ">
+          <div class="bg-danger col-4 ">
+<!-- ici align-self utilise les flexbox appris en html css, le "start" = gauche(je n'ai pas mis le start car quand on met du code il ce met automatiquement en haut a gauche) -->
+              colonne 1
+          </div>
+          <div class="bg-danger col-4 align-self-center">
+            <!-- "center" = au centre -->
+              colonne 2
+          </div>
+          <div class="bg-danger col-4 align-self-end">
+            <!-- "end" a l'opposer de start (a droite)-->
+              colonne 3
+          </div>
+      </div>
+  </div>
+
+  <!-- ********************************************************************************************************************************************** -->
+
+  <br>
+  <h1>CRC Exo - Container row col 2</h1>
+  <div class="container  " >
+    <div class="row ">
+      <div class=" col-12 border border-primary bg-primary text-center py-3 text-light card">
+        Premier niveau avec 12 colonnes
+        <!-- j'ai fait une row de 12 colonnnes -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-8 border border-primary bg-warning text-center  py-3 text-light card">
+        Second niveau avec 8 colonnes
+        <!-- j'ai fait une 2nd row avec une colonnes de 8 -->
+        <div class="row">
+          <div class="col-4 border border-primary bg-danger text-center mt-2 py-3 text-light card">
+            troisème niveau avec 4 colonnes
+            <!-- j'ai fait une 3ieme row dans la 2nd row avec une colonnes de 4 -->
+          </div>
+          <div class="col-6 border border-primary bg-info text-center mt-2 py-3 text-light card">
+            troisième niveau avec 6 colonnes
+            <!-- dans la 3ieme row j'ai fait une colonnes de 6 -->
+            <div class="row">
+              <div class=" col-3 border border-primary bg-secondary text-center mt-1 py-2 text-light card">
+                quatrième niveau avec 3 colonnes
+                <!-- j'ai fait une 4ieme row dans la 3ieme row avec une colonnes de 3 -->
+              </div>
+              <div class=" col-5 border border-primary bg-secondary text-center mt-1 py-2 text-light card">
+                quatrième niveau avec 5 colonnes
+                <!-- dans la 4ieme row j'ai fait une colonnes de 5 -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 bg-success text-center text-light py-3">
+        Second niveau avec 4 colonnes
+        <!-- dans le 2nd row j'ai fait une colonnes de 4 -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ********************************************************************************************************************************************** -->
+<br>
+  <h1>Exo-Padding & Margin</h1>
+  <div class="container text-center">
+    <div class="row py-3 border border-dark justify-content-between ">
+      <div class="col-5  bg-danger ms-2  ">
+        <!-- Ici on fait un offset de 2(c'est un dire un saut de colonne de deux entre les deux colonnes mais ça marche pas mdr) un margin a gauche (start) de 2 et sur la ligne un padding intérieur de3 sur l'axe y(haut et bas) -->
+        colonne rouge
+      </div>
+      <div class="col-5 bg-success me-2 ">
+        colonne verte
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
