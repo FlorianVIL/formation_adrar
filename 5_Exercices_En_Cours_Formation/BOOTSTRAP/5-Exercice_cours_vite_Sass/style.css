@@ -1,0 +1,44 @@
+#nestingTest {
+  background-color: royalblue;
+  font-size: 2em;
+  border: solid 2px black;
+}
+#nestingTest p {
+  font-family: Georgia;
+  color: white;
+  padding-left: 10%;
+}
+#nestingTest :hover {
+  background-color: rgb(255, 0, 204);
+  color: black;
+  padding-right: 10%;
+}
+
+.alerte-box, .alerte-vert, .alerte-rouge {
+  width: 20%;
+  border: 3px solid #0015ff;
+  text-align: center;
+  color: white;
+  margin: auto;
+  margin-top: 2px;
+}
+
+.alerte-rouge {
+  background-color: rgb(236, 94, 47);
+}
+
+.alerte-vert {
+  background-color: rgb(47, 236, 47);
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: blue;
+  transform: rotate(45deg);
+}
+
+p {
+  transform: rotate(45deg);
+}/*# sourceMappingURL=style.css.map */
