@@ -1,0 +1,102 @@
+h1 {
+    color:red;
+    text-align: center;
+    font-weight: normal;
+}
+
+h3 {
+    color: blue;
+    font-size: 1.5em;
+}
+
+/*Façon de faire sans les class avec des sous class:
+article:nth-child(2) p, article:nth-child(3) p {
+    background-color: gray;
+}
+
+h1 + article p, h1 + article + article p {
+    background-color: gray;
+*/
+.articleUn ,.articleDeux {
+    background-color: gray;
+}
+
+strong {
+    font-weight: normal;
+    color: yellowgreen;
+}
+
+em {
+    font-style: normal;
+    text-decoration: underline;
+    font-size: 2em;
+    color: orange;
+}
+
+/* Façon de faire sans les class avec des sous class:
+article:last-child p, {
+} */
+p {
+    background-color: pink;
+}
+
+article:nth-child(3) h3 {
+    color: green;
+    text-align: right;
+    text-decoration: underline;
+}
+
+/* Correction::
+
+Question A
+h1 {
+    color : red;
+    font-weight:bold;
+    font-size: 5em;
+    text-align: center;
+}
+******************************
+Question B
+h3 {
+    color : blue;
+    font-size: 3em;
+}
+*************************************
+Question C
+.premierArticle p, .deuxiemeArticle p {
+    background-color: lightgray;
+}
+*************************************
+article:nth-child(2) p, article:nth-child(3) p{
+    background-color: lightgray;
+}
+***************************************
+h1 + article p, h1 + article + article p  {
+    background-color: lightgray;
+}
+**************************************
+Question D
+strong {
+    font-weight: bold;
+    color:yellowgreen;
+}
+*************************************
+ Question E
+em {
+    font-style: normal;
+    color: orange;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+**********************************
+Question F
+article:last-child p, .troisiemeArticle p, h1 + article + article + article p {
+    background-color: pink;
+}
+************************************
+Question G
+.deuxiemeArticle h3, article:nth-child(3) h3, h1 + article + article h3 {
+    text-align: right;
+    color: green;
+    text-decoration: underline;
+} */

@@ -1,0 +1,257 @@
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background: url(fond.png) center no-repeat fixed;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+h4, legend {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+/*----------------------------------------------------
+------------------ MENU NAV --------------------------
+-----------------------------------------------------*/
+
+.bandeau {
+    background-color: #000;
+    height:300px;
+    width:100vw;
+    overflow: hidden;
+}
+
+.bandeau video {
+    margin-top: -200px;
+    width: 100%;
+}
+
+.menu {
+    background-color: #000;
+    height: 50px;
+    width: 100vw;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+.menu ul {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+    list-style: none;
+    padding: 10px 50px;
+    /*width: 100%;*/
+}
+
+.menu ul li {
+    /*flex-grow: 1;
+    justify-content: center;*/
+    margin-right: 50px;
+}
+
+.menu a, .menu a:visited {
+    color: white;
+}
+
+.menu a:hover {
+    color: rgb(159, 156, 179);
+}
+
+/*----------------------------------------------------
+------------------ BATARANG ANIM ---------------------
+-----------------------------------------------------*/
+
+.batarang {
+    animation: 750ms infinite linear rotation ;
+    width:100px;
+    z-index: 1;
+}
+
+.wrapper {
+    /*margin-top: 300px;*/
+    padding: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.anim {
+    animation: 4s infinite linear translation ;
+    position: absolute;
+    top:725px;
+    left:70px;
+}
+
+@keyframes rotation {
+    0% {
+        
+    }
+
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes translation {
+    0% {
+        
+    }
+
+    100% {
+        transform: translate(calc(100vw - 75px));
+    }
+}
+
+/*----------------------------------------------------
+------------------ HEADER ----------------------------
+-----------------------------------------------------*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    /*width: 100vw;*/
+}
+
+header div:first-child {
+    background: url(Joker_Portrait_01.jpg);
+    background-size: cover;
+    height: 430px;
+}
+
+header img {
+    width: 350px;
+}
+
+header img:hover {
+    animation: 750ms linear opacity ;
+    animation-fill-mode: forwards;
+    /*opacity: 0%;*/
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+header div:last-child {
+    margin-left: 30px;
+}
+
+header ul {
+    font-style: italic;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+/*----------------------------------------------------
+------------------ CENTRAL ---------------------------
+-----------------------------------------------------*/
+
+.fiche {
+    display: grid;
+    grid-template-columns: 350px 1fr 1fr;
+    margin-bottom: 30px;
+}
+
+.fiche li {
+    list-style: none;
+}
+
+.fiche h4 {
+    margin-top: 20px;
+}
+
+/*----------------------------------------------------
+------------------ ASIDE -----------------------------
+-----------------------------------------------------*/
+
+aside {
+    background-color: rgb(159, 156, 179);
+    font-size: 0.9rem;
+    padding: 10px;
+}
+
+aside form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+input[placeholder] {
+    height:1.3rem;
+    width:66%;
+}
+
+fieldset {
+    margin: 10px 0 20px 0;
+}
+
+/*----------------------------------------------------
+------------------ FICHE -----------------------------
+-----------------------------------------------------*/
+
+.fiche_gauche {
+    margin-left: 100px;
+    padding-right: 20px;
+    border-right: 7px #000 dashed;
+    text-align: right;
+}
+
+.fiche_droite {
+    padding-left: 20px;
+    text-align: left;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.realisation img {
+    width:450px;
+}
+
+/*----------------------------------------------------
+------------------ FOOTER ----------------------------
+-----------------------------------------------------*/
+
+footer {
+    border-top: 7px #000 solid;
+    padding-top: 30px;
+    /*width: 100vw;*/
+}

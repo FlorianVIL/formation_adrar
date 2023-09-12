@@ -1,0 +1,102 @@
+// #nestingTest {
+//     background-color: blue;
+// }
+
+// #nestingTest p {
+//     color:burlywood;
+// }
+
+// #nestingTest p:hover {
+//     background-color: brown;
+// }
+// ******************Correction du prof******************************
+//**********Exo2= style.scss*********
+$textSize:(2em);
+$padding:(10%);
+$border:(solid 2px black);
+
+@import"fichier.scss";
+//********Exo3= J'importe mes variables depuis un ficher (ici nommé fichier) ensuite j'ai juste a nommé mes variables dans le css voulus***
+
+#nestingTest{
+    background-color: royalblue;
+    font-size: $textSize;
+    border: $border;
+    p{
+        font-family: $police;
+        color: white;
+        padding-left: $padding;
+
+        
+    }
+    :hover{
+        background-color: rgb(255, 0, 204);
+        color: $colorText;
+        padding-right: $padding;
+    }
+}
+
+
+// *****************************************************On va parler de L'HERITAGE*************************************
+
+// .classe-alerteBox{
+// text-align: center;
+// margin: 0 40%;
+// border:(solid 2px blue); 
+
+// }
+
+// .alerte-rouge{
+//     @extend .classe-alerteBox;
+//     background-color: red;
+// }
+
+// .alerte-verte{
+//     @extend .classe-alerteBox;
+//     background-color: green;
+// }
+
+// ******************************************Correction du prof de l'exo héritage************************************************
+// On fait une classe alerte
+.alerte-box{
+    // %alerte-box{ on utilise le "%" pour dire au que cette classe n'est pas utiliser dans le html 
+        width: 20%;
+        border: 3px solid #0015ff;
+        text-align: center;
+        color: white;
+        margin: auto;
+        margin-top: 2px
+    };
+    
+    .alerte-rouge{
+        // cette classe va hériter de toutes les propriétés de alerte-box
+        @extend .alerte-box;
+        // @extend %alerte-box;
+        background-color: rgb(236, 94, 47);
+    };
+    .alerte-vert{
+        // cette classe va hériter de toutes les propriétés de alerte-box
+        @extend .alerte-box;
+          // @extend %alerte-box;
+        background-color: rgb(47, 236, 47);
+    };
+
+
+    // ********************************MIXINS*******************************
+    @mixin transform($property){
+        -webkit-transform: $property;
+        -ms-transform: $property;
+        transform: $property;
+    };
+    
+    .square{
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        background-color: blue;
+        @include transform(rotate(45deg));
+    }
+    
+    p{
+        @include transform(rotate(45deg));
+    }

@@ -1,0 +1,159 @@
+/*****************
+    RESET
+*****************/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: helvetica, arial, sans-serif;
+}
+
+/*****************
+    GENERAL
+*****************/
+html {
+    background-color: #eee;
+}
+body {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /*Autre manière de faire*/
+    grid-template-columns: repeat(12,1fr);
+    width: 960px;
+    margin: 0 auto;
+}
+
+/*********************************
+PLACEMENT DES BLOCKS DANS LA GRID
+*********************************/
+header{
+    grid-row: 1;
+    grid-column: 1 /span 12;
+    grid-column: 1 / 13; /*Autre manière de faire*/
+}
+#presentation, img{
+    grid-row:2;
+}
+main, aside {
+    grid-row:3;
+}
+#formation, #hobbies{
+    grid-row:4;
+}
+#presentation, main, #formation {
+    grid-column: 1 /span 8;
+}
+img, aside, #hobbies {
+    grid-column: 9 /span 4;
+}
+
+/*********************************
+    PLACEMENT INTERNE
+*********************************/
+header{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+#presentation, aside section, #hobbies{
+    padding: 50px 30px;
+}
+
+#presentation p:first-child {
+    margin-bottom: 30px;
+}
+
+main {
+    padding: 50px 30px 0;
+}
+
+#formation {
+    padding: 30px 30px 50px;
+}
+
+img{
+    justify-self: center;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.date{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 15px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+article{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+h3{
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main h3:last-child{
+    margin-bottom: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/*********************************
+    DESIGN
+*********************************/
+header, aside section:last-child {
+    background-color: #ddd;
+}
+
+header, aside section:last-child, main h3 {
+    color: #1e497c;
+}
+
+#presentation, aside section:first-child, #hobbies, .date{
+    background-color: #1e497c;
+    color: #fff;
+}
+
+h1{
+    font-size: 5em;
+}
+
+h2{
+    font-size: 2em;
+    font-weight: normal;
+}
+
+h3{
+    border-bottom: solid 3px #1e497c;
+}
+
+main h3 {
+    border-color: #ddd;
+}
+
+aside section:first-child h3, #hobbies h3 {
+    border-color: #fff;
+}
+
+ul li {
+    font-style: italic;
+}

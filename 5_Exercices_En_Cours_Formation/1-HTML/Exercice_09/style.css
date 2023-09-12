@@ -1,0 +1,21 @@
+table {
+    border: double 3px purple;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td, th{
+    border: solid 2px black;
+}
+
+caption {
+    color: purple;
+    font-weight: bold;
+}
+
+th {
+    background-color: skyblue;
+}
+
+
+
