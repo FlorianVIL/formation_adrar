@@ -1,0 +1,26 @@
+.card {
+    background: linear-gradient(0.6turn,#e66465, #9198e5);
+    width: 300px;
+    padding: 15px;
+    color: white;
+    margin: 0 auto;
+    box-shadow: -15px 15px 15px grey;
+}
+
+.avatar {
+    width: 100%;
+}
+
+.ajouter {
+    color: green;
+}
+img {
+    position: absolute;
+}
+
+#raquette {
+    width: 100px;
+    height: 50px;
+    background: blue;
+    position: absolute;
+}

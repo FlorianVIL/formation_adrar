@@ -1,0 +1,9 @@
+ection {
+    display: flex;
+    width: 100%;
+    margin-left: 50px;
+}
+
+#cibleText{
+    margin-left: 30px;
+}

@@ -1,0 +1,20 @@
+body{
+    background: linear-gradient(#fff,#000);
+    min-height: 100vh;
+    height: 3000px;
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    height: 30px;
+    width: calc(100% - 6px);
+    position: fixed;
+    border: solid 3px blueviolet;
+}
+
+.bar {
+    border: none;
+    background-color: aqua;
+    width: 0;
+}
